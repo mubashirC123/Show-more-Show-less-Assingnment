@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+   
+</head>
+<style>
+    .para{
+        color: blue;
+        
+
+    }
+    .box{
+        border: 5px solid red;
+        background-color: pink;
+    }
+    .butt{
+        color: red;
+        border: 2px solid blue;    
+        background-color: yellow;
+
+
+    }
+</style>
+
+<body>
+    <div class="box">
+    <p id="text" class="para">
+        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sequi iste
+        <span id="less">Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora veritatis dolor praesentium?
+            Quisquam praesentium unde libero maxime, at hic quibusdam harum quaerat nihil quod reiciendis quia, corporis
+            sunt possimus voluptatem.</span><span id="more"> veniam, mollitia nihil adipisci tenetur? Libero ipsa,
+            nostrum
+            distinctio placeat quis dolores cumque aliquid velit tempora repudiandae
+            sunt? Eius, modi?</span>
+    </p>
+
+<center>
+    <button id="btn" class="butt" onclick="text()">Show less</button>
+   
+</center>
+</div>
+  
+</body>
+<script>
+    function text() {
+        var less = document.getElementById("less");
+        var moreText = document.getElementById("more");
+
+        if (less.style.display == "none") {
+            less.style.display = "inline";
+            document.getElementById("btn").innerHTML="Show More"
+           
+
+        } else {
+            less.style.display = "none";
+            document.getElementById("btn").innerHTML="Show More"
+
+        }
+    }
+    
+
+
+</script>
+
+</html>
